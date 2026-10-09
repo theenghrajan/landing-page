@@ -4,15 +4,15 @@ As per comment #20,
 
 Re: The client is having trouble finding the landing page form submissions on the backend of the website. Can you please provide instructions on how to find the landing page form submission when the client logs in to WordPress backend
 ....
-The landing page (https://alliancetel.com/lp/) is built in standard custom HTML as requested in comment #4, and it is separate from the WordPress website. Because of this, the form submissions are not saved in the WordPress backend, so there is nothing to find there.
+The landing page (https://alliancetel.com/lp/) is built in standard custom HTML as requested in comment #5, and it is separate from the WordPress website. Because of this, the form submissions are not saved in the WordPress backend, so there is nothing to find there.
 
 Currently, each submission is sent by email to info@alliancetel.com (from no-reply@alliancetel.com), so the client can find all submissions in that inbox.
 
 If the client needs to view the submissions in one place, we have the following options:
 1. Keep the current setup and view the submissions by email (no changes needed).
-2. Save the submissions and show them as a list on a separate password-protected page, so the client can view all past submissions.
-3. Rebuild the landing page in WordPress so the submissions are saved in the WordPress backend.
+2. Record all submissions in a Google Sheet, so the client can view them in one list (email notifications will continue as they are).
+3. Rebuild the landing page in WordPress so the submissions are saved in the WordPress backend, which will require additional working hours.
 
-Please let us know which option the client prefers, and we will proceed accordingly.
+Please let us know which option the client prefers, and we will review and proceed accordingly.
 
 Thanks!
