@@ -1,0 +1,23 @@
+Ashley Yaggie
+As per comments #27 and #29,
+
+We have gone through the new design and the files from comment #29, and compared them with the current landing page https://www.bedrosianrugs.com/lp/. Before we set it up on dev, please confirm the points below.
+
+1. Message field
+The new design does not have the message field that is on the current form, but comment #27 asks us to keep it. Should we add it to both forms (the one at the top and the one at the bottom), or only to the bottom form so the top form stays short?
+
+2. Two forms on the page
+The current page has one form. The new design has two: one at the top next to the video and one in the contact section. Both will send to the same recipients with the same spam protection, and both will have the "I'm not a robot" check. Please confirm you want both forms.
+
+3. Tracking
+We will keep the existing Google Tag Manager code (GTM-MFC85M8) on the new page. Checking and updating the conversion tracking (form submits for both forms and the call links) is not part of this landing page task, so could you please open a separate tracking task for it? That team can then confirm everything fires correctly once the new page is live.
+
+4. Service options
+The service dropdown will have the new options: Area Rug Cleaning, Oriental Rug Cleaning, Silk or Antique Rug Cleaning, Rug Repair & Restoration and Other Services. Apart from the email notifications, does any other system (such as a CRM or lead sheet) use the old options (Carpet Cleaning, Rug Cleaning, Furniture Cleaning, Stone Cleaning) that would need updating?
+
+5. Hero video on mobile
+The new video files are large, which will slow down the page on phones. We plan to show the still image instead of the video on mobile, while desktop keeps the video. Please let us know if the client would prefer the video on mobile as well.
+
+Once confirmed, we will set up the page on dev at https://frontend.smartwebsitedesign.com/lp-bedrosian/ for your review. The current live page will be backed up first and stays as it is until you approve.
+
+Thanks!
