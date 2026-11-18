@@ -1,0 +1,102 @@
+// ## Typography
+
+body {
+   font: 400 1.4rem/3rem $baseFont;
+   @media (min-width: 1200px) {
+      font-size: 1.6rem;
+      line-height: 3.4rem;
+   }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+   font-family: $baseHeadingFont;
+   line-height: 1.2;
+   font-weight: 700;
+   margin: 0 0 1.5rem;
+   color: #182433;
+}
+
+h1,
+.h1 {
+   font-size: 3rem;
+   text-transform: uppercase;
+
+   small {
+      font-size: 2rem;
+   }
+
+   @media (min-width: 576px) {
+      font-size: 4.2rem;
+
+      small {
+         font-size: 3rem;
+      }
+   }
+
+   @media (min-width: 992px) {
+      font-size: 5.8rem;
+
+      small {
+         font-size: 4rem;
+      }
+   }
+
+   @media (min-width: 1200px) {
+      font-size: 6.8rem;
+
+      small {
+         font-size: 5rem;
+      }
+   }
+}
+
+h2,
+.h2 {
+   font-size: 2.5rem;
+   text-transform: capitalize;
+
+   @media (min-width: 992px) {
+      font-size: 3.5rem;
+   }
+
+   @media (min-width: 1200px) {
+      font-size: 4.5rem;
+   }
+}
+
+h3,
+.h3 {
+   font-size: 2.1rem;
+   font-family: $baseFont;
+}
+
+h4,
+.h4 {
+   font-size: 1.9rem;
+}
+
+h5,
+.h5 {
+   font-size: 1.6rem;
+   font-family: $baseFont;
+}
+
+h6,
+.h6 {
+   font-size: 1.5rem;
+   font-family: $baseFont;
+   text-transform: uppercase;
+   font-weight: 500;
+   color: $dark-blue;
+}

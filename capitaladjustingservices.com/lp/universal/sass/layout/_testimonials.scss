@@ -1,0 +1,34 @@
+.testimonials-block {
+  padding: 3rem 0;
+  background: #f6f7fb;
+
+  @media(min-width: 768px) {
+    padding: 5rem 0;
+  }
+
+  @media(min-width: 1200px) {
+    padding: 9rem 0 10rem;
+  }
+}
+
+.testimonials-slider {
+  padding: 2rem 0;
+  max-width: 1350px;
+  margin: 0 auto;
+  width: 100%;
+
+  @media(min-width: 768px) {
+    .item {
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  @media(min-width: 992px) {
+    padding: 3rem 6rem;
+  }
+
+  @media(min-width: 1200px) {
+    padding: 3rem 8rem;
+  }
+}
+

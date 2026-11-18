@@ -1,0 +1,54 @@
+// ## Buttons
+
+.btn {
+   outline: none !important;
+   text-transform: capitalize;
+   border-radius: 0;
+   transition: .2s all ease-in-out;
+   border: 0;
+   font-family: $baseFont;
+   font-weight: 500;
+   color: $white;
+   box-shadow: none;
+   display: inline-block;
+   padding: 1rem 2rem;
+   font-size: 1.4rem;
+
+   @media(min-width: 576px){
+      padding: 1.5rem 3.5rem;
+      font-size: 1.7rem;
+   }
+
+   &.btn-primary {
+      line-height: 2.3rem;
+      color: $white;
+      background: $dark-blue;
+
+      &:hover,
+      &:focus {
+         background: $red;
+         color: $white;
+      }
+   }
+
+   &.btn-secondary {
+      line-height: 2.3rem;
+      color: $white;
+      background: $red;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+         background: $dark-blue;
+      }
+   }
+
+   &:hover,
+   &:focus {
+      text-decoration: none;
+      outline: none !important;
+      box-shadow: none;
+   }
+}
+
+

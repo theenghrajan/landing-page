@@ -1,0 +1,100 @@
+.circular-section {
+   padding: 3rem 0;
+
+   @media(min-width: 768px) {
+      padding: 5rem 0;
+   }
+
+   @media(min-width: 1200px) {
+      padding: 10rem 0;
+   }
+
+   h2 {
+      color: $white;
+   }
+
+   .circular-item {
+
+      .circular-wrapper {
+         text-align: center;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-wrap: wrap;
+
+         .circle-item {
+            padding: 1rem;
+            transition: .5s ease-in-out;
+            text-align: center;
+            width: 100%;
+            max-width: 145px;
+
+            @media (min-width: 576px) {
+               max-width: 225px;
+            }
+
+            @media (min-width: 1200px) {
+               max-width: 400px;
+            }
+
+            &:hover {
+               text-decoration: none;
+
+               .circle-sm {
+                  border: 2px solid $red;
+
+                  &:after {
+                     border: 2px dotted $red;
+                  }
+               }
+            }
+
+            .circle-sm {
+               width: 100px;
+               height: 100px;
+               margin: 0 auto;
+               border: 2px solid $white;
+               border-radius: 50%;
+               position: relative;
+               transition: .3s all ease-in-out;
+
+               @media (min-width: 992px) {
+                  width: 150px;
+                  height: 150px;
+               }
+
+               @media (min-width: 1200px) {
+                  width: 200px;
+                  height: 200px;
+               }
+
+               img {
+                  border-radius: 50%;
+                  width: 100%;
+               }
+
+               &:after {
+                  content: '';
+                  position: absolute;
+                  border: 2px dotted $white;
+                  top: -6px;
+                  left: -6px;
+                  right: -6px;
+                  bottom: -6px;
+                  border-radius: 50%;
+                  transition: .3s all ease-in-out;
+               }
+            }
+
+            h3 {
+               font-family: $baseFont;
+               font-size: 1.5rem;
+               text-transform: capitalize;
+               color: $white;
+               padding: 2rem 0;
+               font-weight: 400;
+            }
+         }
+      }
+   }
+}

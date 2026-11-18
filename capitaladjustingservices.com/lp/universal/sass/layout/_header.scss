@@ -1,0 +1,425 @@
+#header {
+   position: relative;
+}
+
+.header-top {
+   background: $dark-gray;
+   color: $white;
+   padding: 1.5rem 0;
+   display: none;
+   @media(min-width: 768px) {
+     display: block;
+   }
+
+   .container {
+      justify-content: center;
+      align-items: center;
+   }
+
+   @media(min-width: 576px) {
+      .container {
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+      }
+   }
+
+   .email {
+      display: inline-block;
+      color: $white;
+      font-size: 1.3rem;
+      padding-left: 2.5rem;
+      position: relative;
+      z-index: 1;
+      line-height: 1;
+      margin: 0 0 1rem;
+
+      @media(min-width: 576px) {
+         margin: 0;
+      }
+
+      &:after {
+         position: absolute;
+         content: '';
+         top: 1px;
+         left: 0;
+         height: 1.1rem;
+         width: 1.4rem;
+         background: url('../images/sprite.png') no-repeat 0 0;
+      }
+   }
+}
+
+.header-bottom {
+   padding: 1rem 0;
+   position: relative;
+   background: $white;
+
+   .toggle-btn {
+      outline: none;
+      box-shadow: none;
+      border: 0;
+      cursor: pointer;
+   }
+
+   .btn-open {
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      height: 30px;
+      width: 28px;
+      overflow: hidden;
+      z-index: 11;
+      font-size: 0;
+      background: $white;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: .2rem 0;
+      @media(min-width: 576px) {
+         top: 3.5rem;
+      }
+      &:after,
+      &:before {
+         position: absolute;
+         content: '';
+         top: 5px;
+         left: 0;
+         right: 0;
+         height: 2px;
+         width: 100%;
+         z-index: -1;
+         background: $dark-blue;
+      }
+
+      &:before {
+         top: auto;
+         bottom: 5px;
+      }
+
+      span {
+         position: absolute;
+         display: inline-block;
+         height: 2px;
+         background: $dark-blue;
+         width: 100%;
+         top: 50%;
+         margin-top: -.1rem;
+      }
+   }
+
+   .btn-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: $red;
+      z-index: 111;
+      font-size: 0;
+      transform: rotate(45deg);
+
+      &:after,
+      &:before {
+         position: absolute;
+         content: '';
+         top: 50%;
+         left: 0;
+         right: 0;
+         height: 1px;
+         width: 100%;
+         z-index: -1;
+         background: $white;
+         transform: translateY(-50%);
+      }
+
+      &:before {
+         top: 50%;
+         transform: translateY(-50%) rotate(90deg);
+      }
+   }
+
+   .primary-menu {
+      padding: 3rem 1.5rem;
+      position: fixed;
+      overflow: auto;
+      opacity: 0;
+      visibility: hidden;
+      top: -110%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba($white, .95);
+      z-index: 11;
+      min-height: 100vh;
+      transition: .3s all ease-in-out;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+
+      @media(min-width: 768px) {
+         position: static !important;
+         overflow: hidden;
+         opacity: 1;
+         visibility: visible;
+         min-height: auto;
+      }
+
+      ul {
+         padding: 0;
+         margin: 0;
+         list-style-type: none;
+      }
+
+      li {
+         width: 100%;
+         display: block;
+         text-align: center;
+         padding: .8rem 0;
+
+         a {
+            display: block;
+            text-align: center;
+            color: $black;
+            font-size: 2rem;
+            line-height: 1.2;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-weight: 600;
+
+            &:hover,
+            &:focus {
+               color: $red;
+            }
+         }
+
+         @media(min-width: 768px) {
+            display: inline-block;
+            vertical-align: middle;
+            width: auto;
+            margin: 0 .8rem;
+
+            a {
+               font-size: 1.3rem;
+               color: $gray;
+            }
+         }
+
+         @media(min-width: 992px){
+            margin: 0 1rem;
+
+            a {
+               font-size: 1.4rem;
+            }
+         }
+      }
+   }
+
+   .tel-block {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $dark-blue;
+
+      a {
+         color: $white;
+         font-size: 1.6rem;
+         text-align: center;
+         display: block;
+         padding: 1.2rem 0;
+         line-height: 1;
+      }
+
+      span {
+         position: relative;
+         padding-left: 2rem;
+
+         &:after {
+            position: absolute;
+            content: '';
+            top: 1px;
+            left: 0;
+            height: 20px;
+            width: 13px;
+            background: url('../images/sprite.png') no-repeat -48px 0;
+         }
+      }
+
+      .small {
+         display: none;
+      }
+   }
+
+   @media(min-width: 768px) {
+      .container {
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .right-block {
+         text-align: right;
+      }
+
+      .toggle-btn {
+         display: none;
+      }
+
+      .primary-menu {
+         position: static !important;
+         overflow: hidden;
+         opacity: 1;
+         visibility: visible;
+         min-height: auto;
+         padding: 0;
+         margin: 0 0 1rem;
+      }
+
+      .tel-block {
+         position: static;
+         background: transparent;
+         vertical-align: middle;
+         display: inline-block;
+
+         a {
+            color: $dark-blue;
+            font-size: 3.4rem;
+            display: block;
+            position: relative;
+            padding: 0 0 0 4rem;
+            text-decoration: none;
+
+            &:after {
+               position: absolute;
+               content: '';
+               top: 7px;
+               left: 0;
+               height: 35px;
+               width: 22px;
+               background: url('../images/sprite.png') no-repeat -20px 0;
+            }
+
+            &:hover,
+            &:focus {
+               color: $black;
+            }
+         }
+
+         span {
+            padding-left: 0;
+
+            &:after {
+               display: none;
+            }
+         }
+
+         .small {
+            display: block;
+            font-size: 1.5rem;
+         }
+      }
+   }
+
+   @media(min-width: 1200px) {
+      .right-block {
+         width: 80%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+         .primary-menu {
+            margin: 0;
+         }
+      }
+   }
+
+   @media(min-width: 1200px) {
+
+      .primary-menu {
+
+         li {
+            margin: 0 1rem;
+         }
+      }
+   }
+
+   @media (min-width: 1366px) {
+      .right-block {
+
+         .primary-menu {
+
+            li {
+               margin: 0 2rem;
+            }
+         }
+      }
+   }
+}
+
+.menuOpen {
+   overflow: hidden;
+
+   @media(min-width: 768px){
+      overflow: auto;
+   }
+
+   .header-bottom {
+
+      .primary-menu {
+         top: 0;
+         opacity: 1;
+         visibility: visible;
+      }
+   }
+}
+
+.stick {
+
+   #header {
+      padding-bottom: 100px;
+   }
+
+   .header-bottom {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 0 10px 0 rgba($black, .2);
+
+      .btn-open {
+         top: 2rem;
+      }
+   }
+
+   @media(max-width: 767px) {
+      .logo {
+         max-width: 100px;
+      }
+   }
+}
+
+.phone-icon {
+   font-size: 0;
+   position: fixed;
+   background: url("../images/phone-icon.png") no-repeat center ;
+   height: 3rem;
+   width: 2.5rem;
+   right: 6rem;
+   top: 2rem;
+   background-size: 100%;
+   @media(min-width: 576px) {
+      top: 3.5rem;
+        }
+}
+.stick .phone-icon {
+   @media(min-width: 576px) {
+      top: 2rem;
+   }
+}

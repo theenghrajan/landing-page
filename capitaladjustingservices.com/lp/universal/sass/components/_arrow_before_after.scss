@@ -1,0 +1,26 @@
+.arrow-before-after {
+  position: relative;
+  display: inline-block;
+
+  @media(min-width: 768px) {
+    &:before {
+      position: absolute;
+      content: '';
+      top: -20px;
+      left: -180px;
+      background: url("../../assets/images/arrow-shape1.png") no-repeat;
+      width: 95px;
+      height: 79px;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: -20px;
+      right: -180px;
+      background: url("../../assets/images/arrow-shape2.png") no-repeat;
+      width: 95px;
+      height: 79px;
+    }
+  }
+}

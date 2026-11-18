@@ -1,0 +1,44 @@
+.specializes-section {
+  padding: 3rem 0;
+
+  @media(min-width: 768px) {
+    padding: 5rem;
+  }
+
+  @media(min-width: 1200px) {
+    padding: 9rem 0 10rem;
+  }
+
+  h2 {
+    color: $cyprus;
+  }
+
+  .d-flex {
+    width: 100%;
+
+    @media(min-width: 576px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .item {
+    text-align: center;
+     padding: 0 0 1rem;
+
+    @media(min-width: 576px) {
+      width: 50%;
+       padding: 1rem;
+    }
+
+    @media(min-width: 768px) {
+      width: 33.33%;
+       padding: 0;
+    }
+
+    @media(min-width: 1200px) {
+      width: 20%;
+    }
+  }
+}

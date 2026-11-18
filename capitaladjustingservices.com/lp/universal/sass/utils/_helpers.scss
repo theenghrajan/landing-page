@@ -1,0 +1,105 @@
+// ## bg cover
+
+%bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  > img {
+    display: none;
+  }
+
+}
+
+.bg-cover {
+  @extend %bg-cover;
+}
+
+// ---------------------------------------------------------===
+// Helpers
+// ---------------------------------------------------------===
+
+// @extend %listreset [Demo]
+
+.w-100 {
+  width: 100%;
+}
+
+.color-red {
+  color: $red;
+}
+
+// list reset
+%listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listreset {
+  @extend %listreset;
+}
+
+// clearfix
+%clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.clearfix {
+  @extend %clearfix;
+}
+
+// transition
+%transition {
+  transition: all 0.3s ease-in-out;
+}
+
+//colors {
+.text-white {
+  color: $white;
+}
+
+//bg-colors
+.bg-white-smoke {
+  background: $white-smoke;
+}
+
+.bg-dark-blue {
+  background: $dark-blue;
+}
+
+.bg-cyprus-blue {
+  background: $cyprus;
+}
+
+//text-alignments
+.text-center {
+  text-align: center;
+}
+
+//section title
+.section-title {
+  width: 100%;
+  text-align: center;
+}
+
+//arrow
+.arrow-double {
+  position: relative;
+  display: inline-block;
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -2rem;
+    background: url("../../assets/images/arrow-double.png") no-repeat;
+    transform: translateY(-50%);
+    width: 11px;
+    height: 9px;
+  }
+}

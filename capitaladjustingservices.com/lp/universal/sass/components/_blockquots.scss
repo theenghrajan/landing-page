@@ -1,0 +1,78 @@
+blockquote {
+   padding: 2rem .5rem;
+   margin: 0;
+   text-align: center;
+   background: $white;
+   box-shadow: 0 8px 20px 0 rgba(0,0,0,0.05);
+
+   q {
+      padding: .5rem 1rem;
+      position: relative;
+      display: block;
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: #7b828b;
+      z-index: 1;
+   }
+
+   @media(min-width: 768px) {
+      padding: 3rem 2rem;
+
+      q {
+         padding: .5rem 3.5rem;
+
+         &:after,
+         &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: 50px;
+            width: 62px;
+            background: url("../images/sprite.png") no-repeat 0 -41px;
+            z-index: -1;
+         }
+
+         &:before {
+            top: auto;
+            left: auto;
+            right: 0;
+            bottom: -2rem;
+            transform: rotate(180deg);
+         }
+      }
+   }
+
+   @media(min-width: 1200px) {
+      padding: 4rem 3rem;
+      min-height: 41rem;
+      q {
+         padding: .5rem 6.5rem;
+      }
+   }
+
+   .rating {
+      display: block;
+      height: 13px;
+      width: 86px;
+      margin: 0 auto 1rem;
+      background: url("../images/sprite.png") no-repeat -2px -96px;
+   }
+
+   .author {
+      font-size: 1.4rem;
+      color: #182433;
+      font-weight: 500;
+      margin: 1rem 0 0;
+      font-family: $baseFont;
+      line-height: 1.4;
+   }
+
+   cite {
+      font-size: 1.3rem;
+      color: #5a5a5a;
+      font-style: normal;
+   }
+}

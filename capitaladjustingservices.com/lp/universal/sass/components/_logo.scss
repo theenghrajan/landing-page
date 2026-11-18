@@ -1,0 +1,9 @@
+// ## logo
+.logo {
+   display: inline-block;
+   color: $white;
+   max-width: 100px;
+   @media(min-width: 576px) {
+      max-width: 100%;
+   }
+}

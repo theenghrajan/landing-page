@@ -1,0 +1,28 @@
+@import 'utils/variables';
+
+@import 'utils/mixins';
+@import 'utils/helpers';
+
+@import 'base/typography';
+@import 'base/general';
+
+@import 'layout/header';
+
+@import 'components/forms';
+@import 'components/buttons';
+@import 'components/slick';
+@import 'components/logo';
+@import 'components/icon_box';
+@import 'components/circular';
+@import 'components/social';
+@import 'components/blockquots';
+@import 'components/icon_circle';
+@import 'components/arrow_before_after';
+
+@import 'layout/banner';
+@import 'layout/about_section';
+@import 'layout/specializes_section';
+@import 'layout/testimonials';
+@import 'layout/why_choose_block';
+@import 'layout/contact_section';
+@import 'layout/footer';

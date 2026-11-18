@@ -1,0 +1,14 @@
+As per the task description, we have set up the Northern Virginia version of the landing page.
+
+https://capitaladjustingservices.com/lp/index.php?location=NorthernVirginia
+
+1. The headline now reads "Northern Virginia's #1".
+2. The phone number is now 703-936-7201 at the top of the page, on the mobile phone button and in the footer.
+3. Form submissions from this page come in with the location "Northern Virginia".
+Reference screenshot: https://drive.google.com/file/d/1jbKc8rJMoToZZ7J4zT1kck6DS_RH743G/view?usp=sharing
+
+The Virginia page is unchanged and still shows 804-913-2363.
+
+The Virginia page also has a section showing the cities served (Washington DC, Virginia Beach, Richmond, Norfolk, Chesapeake and Roanoke). The Northern Virginia page does not show this section right now. Should we add it? If so, which cities should be listed, e.g. Arlington, Alexandria, Fairfax and Washington DC?
+
+Thanks!

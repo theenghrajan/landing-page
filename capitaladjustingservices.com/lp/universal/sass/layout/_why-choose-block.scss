@@ -1,0 +1,19 @@
+.why-chose-block {
+  padding: 3rem 0;
+   background: url("../images/bg-pattren.jpg");
+
+  @media(min-width: 768px) {
+    padding: 5rem 0;
+  }
+
+  @media(min-width: 1200px) {
+    padding: 9rem 0 10rem;
+  }
+
+   h2 {
+      text-transform: capitalize;
+      padding-bottom: 3rem;
+   }
+}
+
+

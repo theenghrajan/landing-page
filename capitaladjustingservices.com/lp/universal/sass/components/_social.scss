@@ -1,0 +1,39 @@
+.social-links {
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+
+   li {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 1.5rem;
+
+      a {
+         color: $white;
+         width: 1.5rem;
+         height: 1.5rem;
+         font-size: 0;
+         display: block;
+      }
+
+      .icon {
+         background: url(../images/sprite-social.png) no-repeat;
+
+         &-tw {
+            background-position: 0 0;
+         }
+
+         &-fb {
+            background-position: -14px 0;
+         }
+
+         &-lnkd {
+            background-position: -30px 0;
+         }
+
+         &-yt {
+            background-position: -50px 0;
+         }
+      }
+   }
+}

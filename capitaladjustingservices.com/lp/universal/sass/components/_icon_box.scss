@@ -1,0 +1,128 @@
+.icon-box {
+   padding: 2.7rem 2rem;
+   transition: 0.2s ease-in-out;
+
+   .sprite {
+      position: relative;
+      width: 100%;
+      height: 7.3rem;
+      margin-bottom: 2rem;
+
+      &:before {
+         position: absolute;
+         content: '';
+         background: url("../../assets/images/icon-damage-sprite.png") no-repeat 0 -6px;
+         width: 60px;
+         height: 60px;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+
+      &.icon2 {
+         &:before {
+            background: url("../../assets/images/icon-damage-sprite.png") no-repeat -75px -14px;
+            width: 40px;
+            height: 52px;
+         }
+      }
+
+      &.icon3 {
+         &:before {
+            background: url("../../assets/images/icon-damage-sprite.png") no-repeat -130px -8px;
+            width: 56px;
+            height: 54px;
+         }
+      }
+
+      &.icon4 {
+         &:before {
+            background: url("../../assets/images/icon-damage-sprite.png") no-repeat -201px -10px;
+            width: 54px;
+            height: 50px;
+         }
+      }
+
+      &.icon5 {
+         &:before {
+            background: url("../../assets/images/icon-damage-sprite.png") no-repeat -270px 0;
+            width: 56px;
+            height: 62px;
+         }
+      }
+
+      &.icon6 {
+         &:before {
+            background: url("../../assets/images/icon-damage-sprite.png") no-repeat -341px -8px;
+            width: 49px;
+            height: 54px;
+         }
+      }
+
+      &.icon7 {
+         &:before {
+            background: url("../../assets/images/icon-damage-sprite.png") no-repeat -405px -19px;
+            width: 59px;
+            height: 41px;
+         }
+      }
+
+      &.icon8 {
+         &:before {
+            background: url("../../assets/images/icon-damage-sprite.png") no-repeat -479px -17px;
+            width: 50px;
+            height: 49px;
+         }
+      }
+
+      &.icon9 {
+         &:before {
+            background: url("../../assets/images/icon-damage-sprite.png") no-repeat -544px -14px;
+            width: 55px;
+            height: 60px;
+         }
+      }
+   }
+
+   p {
+      font-size: 1.3rem;
+      line-height: 1.7;
+   }
+
+   .more {
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.2s all ease-in-out;
+      position: relative;
+   }
+
+   &:hover {
+      box-shadow: 7px 10px 38px 0 rgba($black, 0.08);
+
+      .more {
+         visibility: visible;
+         opacity: 1;
+         position: relative;
+
+         &:after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            right: -1.6rem;
+            background: url("../../assets/images/arrow-red.png") no-repeat;
+            transform: translateY(-36%);
+            width: 11px;
+            height: 9px;
+         }
+      }
+   }
+
+   @media(max-width: 767px) {
+      box-shadow: 7px 10px 38px 0 rgba($black, 0.08);
+
+      .more {
+         visibility: visible;
+         opacity: 1;
+      }
+   }
+}

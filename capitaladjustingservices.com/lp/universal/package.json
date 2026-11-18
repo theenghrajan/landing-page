@@ -1,0 +1,20 @@
+{
+  "name": "capitaladjustingservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "sass": "node-sass -w --output-style compressed --indent-type tab --indent-width 1 --source-map true --error-bell -o assets/css/ sass/"
+  },
+  "author": "SmartSites",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "npm": "^6.9.0"
+  }
+}

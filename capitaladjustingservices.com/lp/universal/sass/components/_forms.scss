@@ -1,0 +1,173 @@
+.form-control {
+   width: 100%;
+   font-size: 1.3rem;
+   font-weight: 400;
+   line-height: 1;
+   padding: 0 .3rem 1rem 0;
+   border-radius: 0;
+   outline: none;
+   border: 0;
+   transition: all 0.3s ease;
+   background-color: transparent;
+   border-bottom: 1px solid $gray;
+   margin-bottom: 0;
+   font-family: $baseFont;
+
+   @media(min-width: 1200px) {
+      padding: 0 .3rem 2rem 0;
+   }
+}  
+
+.has-error {
+   .form-control { 
+      border-bottom: 1px solid $red !important;
+   }
+}
+
+//banner-form
+
+.banner-form-wrapper {
+   max-width: 36rem;
+   margin: 0 auto;
+
+   @media(min-width: 1200px) {
+      margin: 0 0 0 11rem;
+   }
+}
+
+.banner-form {
+   padding-top: 2rem;
+   border: 1px solid $mandarian-orange;
+
+   @media(min-width: 1200px) {
+      padding-top: 3.5rem;
+   }
+
+   .form-heading {
+      padding: 0 2.2rem;
+      position: relative;
+
+      &:after {
+         position: absolute;
+         content: '';
+         width: 22rem;
+         height: .1rem;
+         left: 50%;
+         bottom: 0;
+         transform: translateX(-50%);
+         background: $black;
+      }
+   }
+
+   h3 {
+      color: $dark-blue;
+      padding-bottom: 2rem;
+
+      @media(min-width: 1200px) {
+         padding-bottom: 3rem;
+         text-transform: uppercase;
+      }
+   }
+
+   .form-group {
+      padding: 2.5rem 1.5rem 0;
+
+      @media(min-width: 1200px) {
+         padding: 3.5rem 2.2rem 0;
+      }
+
+      &.submit-holder {
+         padding-left: 0;
+         padding-right: 0;
+      }
+
+   }
+
+   .btn {
+      font-family: $baseFont;
+      font-weight: 600;
+      letter-spacing: 2px;
+   }
+}
+
+//bottom contact
+.bottom-contact {
+   @media(min-width: 768px) {
+      padding: 0 2rem;
+   }
+
+   @media(min-width: 992px) {
+      padding: 0 5rem;
+   }
+
+   @media(min-width: 1200px) {
+      padding: 0 15rem;
+   }
+
+   .d-flex {
+      @media(min-width: 576px) {
+         display: flex;
+         margin: 0 -1.5rem;
+         flex-wrap: wrap;
+      }
+   }
+
+   .form-group {
+      padding-top: 2rem;
+
+      @media(min-width: 576px) {
+         width: 50%;
+         padding: 2rem 1.5rem 0;
+      }
+
+      @media(max-width: 575px) {
+         &:first-child {
+            padding-top: 0;
+         }
+      }
+
+      @media(min-width: 768px) {
+         width: 25%;
+      }
+   }
+
+   .form-control {
+      color: $white;
+
+      &::placeholder {
+         color: $gray3;
+      }
+   }
+
+   .submit-holder {
+      padding-top: 3rem;
+	  width: 100%;
+   }
+
+   .btn {
+      letter-spacing: 1px;
+   }
+
+   .loader {
+      color: $white; 
+   }
+}
+
+.loader {
+	display: inline-block;
+	padding: .5rem 1.5rem;
+	background: #d01818;
+	color: #fff;
+}
+
+.thank-you-message { 
+   padding: 1rem;
+   background: $white;
+   box-shadow: 0 0 5px 0 rgba($black, .2);
+   color: $gray;
+   text-align: center;
+}
+
+.help-block.error {
+   display: none;
+}
