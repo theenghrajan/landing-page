@@ -48,3 +48,6 @@ videos/
 
 #database
 *.sql
+
+# hero videos needed by the page
+!bedrosianrugs.com/handoff/assets/videos/
