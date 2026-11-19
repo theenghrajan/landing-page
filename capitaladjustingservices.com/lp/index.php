@@ -776,6 +776,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                         </div>
                     <?php }
+                    if ($location == 'NORTHERNVIRGINIA') { ?>
+                        <div class="circular-item">
+                            <div class="circular-wrapper">
+                                <a class="circle-item" href="#">
+                                    <div class="circle-sm"><img src="assets/images/arlington-virginia.jpg"
+                                                                alt="Arlington, Virginia">
+                                    </div>
+                                    <h3>Arlington, Virginia</h3>
+                                </a><!--/.circle-item-->
+                                <a class="circle-item" href="#">
+                                    <div class="circle-sm"><img src="assets/images/alexandria-virginia.jpg"
+                                                                alt="Alexandria, Virginia">
+                                    </div>
+                                    <h3>Alexandria, Virginia</h3>
+                                </a><!--/.circle-item-->
+                                <a class="circle-item" href="#">
+                                    <div class="circle-sm"><img src="assets/images/washington-dc.jpg"
+                                                                alt="Washington DC">
+                                    </div>
+                                    <h3>Washington DC</h3>
+                                </a><!--/.circle-item-->
+                            </div>
+                        </div>
+                    <?php }
                     if ($location == 'PENNSYLVANIA') { ?>
                         <div class="circular-item">
                             <div class="circular-wrapper">
